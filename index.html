@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ณิชกานต์ ไกรบำรุง</title>
+    <style>
+        /* ปรับแต่งลักษณะของตัวเว็บไซต์ */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* เพิ่มเอฟเฟกต์การเลือนข้อความ */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* กำหนดรูปแบบของ Section */
+        section {
+            padding: 20px;
+        }
+
+        .profile-info {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-info:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* ปรับแต่งให้ข้อความในรายการทำให้ดูสวยงาม */
+        .favorites ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .favorites li {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+        }
+
+        .favorites li:hover {
+            transform: translateX(10px);
+            background-color: #d1f7d5;
+        }
+
+        /* กำหนดขนาดของภาพโปรไฟล์ */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounce 2s infinite;
+        }
+
+        /* เพิ่มเอฟเฟกต์การกระโดดของภาพโปรไฟล์ */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* เพิ่มการกำหนดรูปแบบของปุ่ม */
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        โปรไฟล์ของ ณิชกานต์ ไกรบำรุง
+    </header>
+
+    <!-- Section Content -->
+    <section>
+        <!-- Profile Image -->
+        <div style="text-align: center;">
+            <img src="https://via.placeholder.com/150" alt="ณิชกานต์ ไกรบำรุง" class="profile-image">
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <h2>ข้อมูลส่วนตัว</h2>
+            <p><strong>ชื่อ:</strong> ณิชกานต์ ไกรบำรุง</p>
+            <p><strong>ระดับชั้น:</strong> ม.4</p>
+            <p><strong>เกรดเฉลี่ย:</strong> 3.97</p>
+        </div>
+
+        <!-- Favorite Subjects and Sports -->
+        <div class="favorites">
+            <h2>ความชอบและกิจกรรม</h2>
+            <p><strong>วิชาที่ชอบ:</strong></p>
+            <ul>
+                <li>ชีววิทยา</li>
+                <li>ฟิสิกส์</li>
+                <li>คณิตศาสตร์</li>
+            </ul>
+
+            <p><strong>กีฬาที่ชอบ:</strong></p>
+            <ul>
+                <li>บาสเกตบอล</li>
+                <li>วอลเลย์บอล</li>
+            </ul>
+        </div>
+
+        <!-- Button to More Info (optional) -->
+        <div style="text-align: center;">
+            <a href="#" class="button">ดูข้อมูลเพิ่มเติม</a>
+        </div>
+    </section>
+
+</body>
+</html>
